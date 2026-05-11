@@ -1,0 +1,10 @@
+{
+  "name": "Nicho Hub",
+  "description": "Plataforma multi-nicho moderna com rádio, podcast e blog integrado.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "display-capture"
+  ],
+  "majorCapabilities": []
+}

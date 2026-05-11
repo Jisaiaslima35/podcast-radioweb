@@ -1,0 +1,20 @@
+{
+  "nome": "Nicho Hub",
+  "slogan": "Inovação, Conteúdo e Experiência",
+  "banner": "https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=2029&auto=format&fit=crop",
+  "logo": "https://lucide.dev/api/icons/radio-tower?color=e63946",
+  "corPrimaria": "#e63946",
+  "corSecundaria": "#f4a261",
+  "streamUrl": "https://stream.zeno.fm/2lakgfphuy7tv",
+  "streamNome": "Nicho FM",
+  "wherebyUrl": "https://automacaojs.whereby.com/reuniao-2-geral844215f8-32fa-48cf-a5d0-91ac716888e7",
+  "wherebyHorarios": ["Seg 20h", "Qua 19h30", "Sex 21h"],
+  "tawkPropertyId": "62201c1d1ffac05b1d7caef3",
+  "statusApiUrl": "/status.json",
+  "redesSociais": {
+    "instagram": "https://instagram.com/nichohub",
+    "facebook": "https://facebook.com/nichohub",
+    "youtube": "https://youtube.com/nichohub",
+    "whatsapp": "https://wa.me/5500000000000"
+  }
+}

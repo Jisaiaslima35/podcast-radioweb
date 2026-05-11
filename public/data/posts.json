@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "titulo": "O Futuro do Streaming em 2026",
+    "resumo": "Como as novas tecnologias de áudio espacial e IA estão mudando a forma como consumimos podcasts e rádio.",
+    "texto": "O mercado de streaming está passando por uma revolução sem precedentes. Com a chegada da ultra-baixa latência e o áudio 3D, a experiência do usuário nunca foi tão imersiva. Neste post, exploramos as tendências que vão dominar o próximo ano, desde a personalização por IA até a integração com o metaverso.",
+    "imagem": "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=1200",
+    "categoria": "Tecnologia",
+    "data": "2026-05-10",
+    "autor": "Gabriel Silva"
+  },
+  {
+    "id": 2,
+    "titulo": "Marketing Digital para Criadores",
+    "resumo": "Estratégias essenciais para fazer seu nicho crescer em plataformas saturadas e manter a relevância.",
+    "texto": "Muitos criadores focam apenas no conteúdo, mas esquecem que a distribuição é metade da batalha. Aprenda a usar o algoritmo a seu favor sem perder a essência da sua marca pessoal.",
+    "imagem": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200",
+    "categoria": "Negócios",
+    "data": "2026-05-08",
+    "autor": "Amanda Rocha"
+  },
+  {
+    "id": 3,
+    "titulo": "Equipamentos para Podcast no Home Office",
+    "resumo": "Um guia completo de microfones, interfaces e tratamento acústico para quem está começando.",
+    "texto": "Ter um som de qualidade não precisa custar uma fortuna. Selecionamos os melhores custo-benefícios para transformar seu quarto em um estúdio profissional.",
+    "imagem": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=1200",
+    "categoria": "Recursos",
+    "data": "2026-05-05",
+    "autor": "Ricardo Souza"
+  },
+  {
+    "id": 4,
+    "titulo": "A Arte da Entrevista ao Vivo",
+    "resumo": "Dicas de como conduzir conversas fluídas e interessantes durante transmissões em tempo real.",
+    "texto": "Entrevistar ao vivo exige jogo de cintura. Discutimos técnicas de escuta ativa e como lidar com imprevistos sem perder o controle da pauta.",
+    "imagem": "https://images.unsplash.com/photo-1551818255-e6e10975bc17?q=80&w=1200",
+    "categoria": "Eventos",
+    "data": "2026-05-03",
+    "autor": "Lucas Mendes"
+  },
+  {
+    "id": 5,
+    "titulo": "Segurança Digital para Portais",
+    "resumo": "Proteja seu site e seus usuários contra ataques comuns e vazamento de dados sensíveis.",
+    "texto": "Em um mundo cada vez mais conectado, a segurança não é opcional. Falamos sobre certificados, firewalls e boas práticas de autenticação.",
+    "imagem": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200",
+    "categoria": "Segurança",
+    "data": "2026-05-01",
+    "autor": "Sofia Costa"
+  },
+  {
+    "id": 6,
+    "titulo": "Gestão de Comunidades Online",
+    "resumo": "Como transformar seguidores em uma comunidade ativa e engajada em torno do seu nicho.",
+    "texto": "Uma comunidade forte é o maior ativo de um criador. Aprenda a mediar discussões e incentivar a participação orgânica dos seus membros.",
+    "imagem": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200",
+    "categoria": "Notícias",
+    "data": "2026-04-28",
+    "autor": "Marcos Oliveira"
+  }
+]

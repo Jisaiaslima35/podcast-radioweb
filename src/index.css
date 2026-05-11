@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Bebas Neue', cursive;
+  
+  --color-primary: var(--color-brand-red);
+  --color-secondary: var(--color-brand-gold);
+  --color-dark: var(--color-brand-black);
+  --color-card: #141414;
+  --color-muted: #a0a0a0;
+
+  --color-brand-black: #0a0a0a;
+  --color-brand-red: #e63946;
+  --color-brand-gold: #f4a261;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-black text-white font-sans antialiased selection:bg-brand-red selection:text-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-wider font-medium;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-brand-red text-white font-display text-xl rounded-md transition-all hover:opacity-90 active:scale-95 shadow-[0_0_15px_rgba(230,57,70,0.3)];
+  }
+  
+  .btn-outline {
+    @apply px-6 py-3 border border-white text-white font-display text-xl rounded-md transition-all hover:bg-white hover:text-black active:scale-95;
+  }
+
+  .glass-card {
+    @apply bg-card border border-white/5 rounded-xl overflow-hidden shadow-2xl;
+  }
+}
+
+.pulsate {
+  animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: .7; transform: scale(1.05); }
+}
+
+.vinyl-spin {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.markdown-body {
+  @apply space-y-4 leading-relaxed;
+}
+
