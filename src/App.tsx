@@ -39,21 +39,21 @@ export default function App() {
         </main>
 
         {/* Global Floating Players */}
-        <div className="fixed bottom-0 left-0 right-0 z-50 flex flex-col gap-2 pointer-events-none p-4 md:p-6">
+        <div className="fixed bottom-0 left-0 right-0 z-50 flex flex-col items-start gap-2 pointer-events-none p-4 md:p-6">
           <AnimatePresence>
             {activePodcast && (
               <motion.div
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: 100, opacity: 0 }}
-                className="pointer-events-auto self-end w-full max-w-xl"
+                className="pointer-events-auto w-full max-w-xl"
               >
                 <PodcastPlayer episode={activePodcast} onClose={() => setActivePodcast(null)} />
               </motion.div>
             )}
           </AnimatePresence>
           
-          <div className="pointer-events-auto w-full">
+          <div className="pointer-events-auto w-full max-w-md">
             <RadioPlayer config={config} />
           </div>
         </div>
