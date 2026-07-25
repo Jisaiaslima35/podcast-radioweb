@@ -1,10 +1,10 @@
 {
-  "name": "Nicho Hub",
-  "description": "Plataforma multi-nicho moderna com rádio, podcast e blog integrado.",
+  "name": "Rádio Tempo de Milagres",
+  "description": "A rádio que liberta - O louvor de paz e mensagens espirituais com Isaías Lima.",
   "requestFramePermissions": [
     "camera",
     "microphone",
     "display-capture"
   ],
-  "majorCapabilities": []
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

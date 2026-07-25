@@ -12,10 +12,14 @@ import TawkWidget from './components/TawkWidget';
 
 // Pages
 import Home from './pages/Home';
+import Locutores from './pages/Locutores';
+import Programacao from './pages/Programacao';
+import Videos from './pages/Videos';
+import Contato from './pages/Contato';
+import Recados from './pages/Recados';
 import Posts from './pages/Posts';
 import PostDetail from './pages/PostDetail';
 import Podcast from './pages/Podcast';
-import About from './pages/About';
 
 export default function App() {
   const [config, setConfig] = useState<AppConfig | null>(null);
@@ -32,14 +36,16 @@ export default function App() {
   return (
     <Router>
       <div className="min-h-screen bg-brand-black text-white flex flex-col">
+        {/* Navigation Bar */}
         <Navbar config={config} />
         
-        <main className="flex-grow pt-16 pb-32">
+        {/* Main Area */}
+        <main className="flex-grow pt-24 pb-36">
           <PageRoutes config={config} onPlayPodcast={setActivePodcast} />
         </main>
 
-        {/* Global Floating Players */}
-        <div className="fixed bottom-0 left-0 right-0 z-50 flex flex-col items-start gap-2 pointer-events-none p-4 md:p-6">
+        {/* Global Floating Custom Radio Player (Fixed at the bottom across the entire site) */}
+        <div className="fixed bottom-0 left-0 right-0 z-50 flex flex-col items-center gap-3 pointer-events-none p-4 md:p-6">
           <AnimatePresence>
             {activePodcast && (
               <motion.div
@@ -53,7 +59,7 @@ export default function App() {
             )}
           </AnimatePresence>
           
-          <div className="pointer-events-auto w-full max-w-md">
+          <div className="pointer-events-auto w-full max-w-xl shadow-[0_10px_30px_rgba(0,0,0,0.8)]">
             <RadioPlayer config={config} />
           </div>
         </div>
@@ -75,6 +81,31 @@ function PageRoutes({ config, onPlayPodcast }: { config: AppConfig, onPlayPodcas
             <Home config={config} onPlayPodcast={onPlayPodcast} />
           </motion.div>
         } />
+        <Route path="/locutores" element={
+          <motion.div key={location.pathname} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }}>
+            <Locutores />
+          </motion.div>
+        } />
+        <Route path="/programacao" element={
+          <motion.div key={location.pathname} initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.98 }}>
+            <Programacao />
+          </motion.div>
+        } />
+        <Route path="/videos" element={
+          <motion.div key={location.pathname} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }}>
+            <Videos />
+          </motion.div>
+        } />
+        <Route path="/contato" element={
+          <motion.div key={location.pathname} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+            <Contato />
+          </motion.div>
+        } />
+        <Route path="/recados" element={
+          <motion.div key={location.pathname} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }}>
+            <Recados />
+          </motion.div>
+        } />
         <Route path="/posts" element={
           <motion.div key={location.pathname} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}>
             <Posts />
@@ -88,11 +119,6 @@ function PageRoutes({ config, onPlayPodcast }: { config: AppConfig, onPlayPodcas
         <Route path="/podcast" element={
           <motion.div key={location.pathname} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }}>
             <Podcast onPlayPodcast={onPlayPodcast} />
-          </motion.div>
-        } />
-        <Route path="/sobre" element={
-          <motion.div key={location.pathname} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-            <About config={config} />
           </motion.div>
         } />
       </Routes>
